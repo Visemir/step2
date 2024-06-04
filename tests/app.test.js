@@ -10,9 +10,9 @@ describe('GET /', () => {
   afterEach(function () {
     server.close();
   });
-  it('responds to /', function testSlash(done) {
+  it('responds to /test', function testSlash(done) {
     request(server)
-      .get('/')
+      .get('/test')
       .expect(200, done);
   });
 });
